@@ -6,7 +6,7 @@ Simple Outlook VBA Script which adds the mail received date in the subject.
 Adds the date to all selected mails. If a slected item isn't a MailItem (e.g. MeetingItem / Calender-Entry) then a counter increase an displays a Message Box to the user.
 
 
-## How to use VBA in a company network
+## How to use VBA without lower the security settings
 You can sign your VBA-Script with a digital certificate.
 Office provides a easy way to create a user based certificate with the "SELFCERT.EXE" tool in the Office root directory e. g. C:\Program Files\Microsoft Office\root\Office16\SELFCERT.EXE
 
