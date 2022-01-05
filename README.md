@@ -2,7 +2,7 @@
 Outlook VBA-Extensions
 
 ## AddDateToSubject
-Simple Outlook VBA Script which adds the mail received date in the subject line of a MailMessage.
+Simple Outlook VBA Script which adds the mail received date in the subject line of a MailItem.
 Adds the date to all selected mails. If a slected item isn't a MailItem (e.g. MeetingItem / Calender-Entry) then a counter increase an displays a Message Box to the user.
 
 ### Example Integration in the Office Ribbon
