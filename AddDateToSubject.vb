@@ -8,6 +8,11 @@ Dim iCountMeetingItems As Integer
 
 Dim olItemCurrentDate As Date
 
+Dim intMaxSubjectLength As Integer
+intMaxSubjectLength = 255
+
+Dim subjectTrim As String
+
 Set olFolder = Application.ActiveExplorer.CurrentFolder
 
 If olFolder.DefaultItemType = olMailItem Then
@@ -19,9 +24,11 @@ If olFolder.DefaultItemType = olMailItem Then
        If TypeOf olItem Is MailItem Then
          olItemCurrentDate = .ReceivedTime
         .Subject = Year(olItemCurrentDate) & "-" & Format(Month(olItemCurrentDate), "00") & "-" & Format(Day(olItemCurrentDate), "00") & " " & .Subject
-        .Save
+		.Subject = LEFT(.Subject, intMaxSubjectLength)
+		.Save
+		
         Else
-        'ElseIf TypeOf olItem Is MeetingItem Then --> if you want match MeetingItems
+       'ElseIf TypeOf olItem Is MeetingItem Then
         iCountMeetingItems = iCountMeetingItems + 1
        End If
    
