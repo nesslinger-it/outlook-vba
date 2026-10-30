@@ -3,7 +3,9 @@ Outlook VBA-Extensions
 
 ## AddDateToSubject
 Simple Outlook VBA Script which adds the mail received date in the subject line of a MailItem.
-Adds the date to all selected mails. If a slected item isn't a MailItem (e.g. MeetingItem / Calender-Entry) then a counter increase an displays a Message Box to the user.
+Adds the date to all selected mails. If a slected item isn't a MailItem (e.g. MeetingItem / Calender-Entry) then a counter increase and displays a Message Box to the user. 
+### Update 30.10.2026
+Purpose of this is that you can store mails with very long subject on Windows System. Even in 2026 the Windows-Explorer and other applications have a problem with storing files that have a path wich is longer than 255 chars. 
 
 ### Example Integration in the Office Ribbon
 ![exampleIntegration](https://user-images.githubusercontent.com/9899606/147570384-b35c2e78-552e-49c9-8146-6f9c2d361140.JPG)
